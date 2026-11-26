@@ -1,0 +1,84 @@
+[
+  {
+    "name": "Guardian onboarding and class-specific lesson filtering",
+    "sanity": true,
+    "viewport": "mobile",
+    "covers": [
+      "guardian email sign-in",
+      "nickname-only learner profiles",
+      "class selection",
+      "class switch resets stale topic and search filters",
+      "class-specific lesson cards",
+      "MSc study level absent from all class selectors"
+    ],
+    "description": "Verifies each learner sees the complete lesson list for their selected class.",
+    "steps": [
+      "Sign in as a guardian",
+      "Select a Class 7 learner",
+      "Choose a topic filter and enter a search term",
+      "Switch to Class 9",
+      "Switch back to Class 7",
+      "Inspect the class selector and confirm MSc is not offered"
+    ],
+    "expected": "Each class change clears the previous topic and search filters, all lessons for the selected class are shown, and MSc is absent from the study-level choices."
+  },
+  {
+    "name": "Roadmap displays actual lesson count separately from topic areas",
+    "viewport": "mobile",
+    "covers": [
+      "actual visible lesson count",
+      "topic checklist count distinct from lesson count",
+      "Class 7 lesson list",
+      "Class 9 lesson list",
+      "Class 10 lesson list"
+    ],
+    "description": "Checks that the roadmap never labels topic headings as lesson cards.",
+    "steps": [
+      "Open Class 7 and compare the roadmap count with visible lesson cards",
+      "Open Class 9 and compare the count",
+      "Open Class 10 and compare the count"
+    ],
+    "expected": "The roadmap lesson number matches the number of lesson cards currently displayed; topic areas are labelled separately."
+  },
+  {
+    "name": "Lesson access and learning materials",
+    "viewport": "mobile",
+    "covers": [
+      "Class 7 plant reproduction lesson",
+      "Class 9 cell and reproduction lessons",
+      "Class 10 life processes and environment lessons",
+      "explanations diagrams and quizzes",
+      "topic-matched lesson photographs and scientific illustrations",
+      "uploaded labelled reference diagrams in matching Class 11 and NEET lessons",
+      "dedicated concept maps in all ten NEET unit lessons"
+    ],
+    "description": "Checks representative lessons across the affected classes and verifies topic-matched lesson imagery.",
+    "steps": [
+      "Open a Class 7 plant lesson and inspect its lesson-card photograph",
+      "Open a Class 9 cell lesson and inspect its scientific cell illustration",
+      "Open a Class 10 lesson",
+      "Open the Class 11 Cell: The Unit of Life lesson and inspect the plant and animal cell references",
+      "Open a NEET heart or reproductive-system lesson and inspect its supplied labelled diagrams",
+      "Open NEET Unit 3 and inspect its dedicated concept map, then open another NEET unit and confirm its diagram labels match that unit",
+      "Read the explanation and open the quiz"
+    ],
+    "expected": "Relevant lessons show their matching uploaded images and labelled reference diagrams, and each selected lesson opens with its explanation, diagram guidance and quiz."
+  },
+  {
+    "name": "Original Bio Bunny identity and learner progress",
+    "viewport": "desktop",
+    "covers": [
+      "original sunny logo",
+      "lesson completion and progress tracking",
+      "guardian learner profiles"
+    ],
+    "description": "Checks the count and filtering fix does not disturb the app's existing learner experience.",
+    "steps": [
+      "Select a learner profile",
+      "Complete one lesson",
+      "Return to the home page",
+      "Inspect the Bio Bunny logo"
+    ],
+    "expected": "Progress remains saved for the selected learner and the original sunny logo remains unchanged."
+  }
+]

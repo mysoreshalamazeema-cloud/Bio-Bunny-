@@ -1,0 +1,16 @@
+{
+  "methods": [
+    "email"
+  ],
+  "headline": "Welcome to Bio Bunny",
+  "subtitle": "A parent or guardian signs in first. Learners use a nickname and class.",
+  "style": {
+    "mode": "light",
+    "accentColor": "#285b43",
+    "backgroundColor": "#fbf8f0",
+    "panelColor": "#fffefa",
+    "textColor": "#243d32",
+    "fontFamily": "DM Sans, system-ui, sans-serif",
+    "borderRadius": 18
+  }
+}
